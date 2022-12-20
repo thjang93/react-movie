@@ -1,6 +1,8 @@
 import { getMouseEventOptions } from '@testing-library/user-event/dist/utils';
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import styles from './Detail.module.css';
+
 function Detail() {
     const { id } = useParams();
     const [loading, setLoading] = useState(true);
